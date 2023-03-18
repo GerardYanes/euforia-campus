@@ -1,0 +1,18 @@
+p1: Un campus exclusiu de cant i ball dirigit a tots els nens i nenes de 8 a 14 anys.
+
+list: 
+  - id: introListLi1
+    content: Set dies intensos de classes de veu, coreografia, interpretació i tallers de maquillatge i escenografia, entre d’altres.
+    class:
+
+  - id: introListLi2
+    content: MasterClass dirigides per membres del programa.
+    class:
+
+  - id: introListLi3
+    content: CASTING INICIAL i GALA FINAL amb pares!
+    class:
+
+  - id: introListLi4
+    content: I… visita d’EUFÒRICS a El Collell!
+    class:

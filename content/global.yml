@@ -1,0 +1,9 @@
+btn_pdf:
+  content: PDF INFORMATIU
+  class:
+  link: '#'
+
+btn_subscribe:
+  content: INSCRIU-T’HI
+  class:
+  link: '#'

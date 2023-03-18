@@ -1,0 +1,62 @@
+sections:
+
+  - id: mainSection1
+    title: Organitzadors del CAMPUS
+    content: El complex ludicoesportiu EL COLLELL, amb més de 20 \n
+              anys d’experiència al sector del lleure, i amb unes \n
+              instalAorces amb L’EQUIP \n
+              D’EUFÒRIA per realitzar aquest campus apassionantAO
+    list: 
+
+    img:
+      src: ''
+      alt: image 1
+
+
+  - id: mainSection2
+    title: Qui atendrà els participants?
+    content: Un equip de professionals del món del cantAoreograﬁa \n
+              i la interpretació dirigiran les classes i tallers juntament \n
+              amb el nostre equip de monitoratgeAà \n
+              acompanyarà i tutelarà els participants les A
+    list: 
+
+
+  - id: mainSection3
+    title: Organitzadors del CAMPUS
+    content: 
+    list: 
+      - id: 3ee610
+        content: Consta de AornsAarregar pdf informatiuAO,
+      - id: 7db4df
+        content: Places limitades i reserva estrictament per ordre d’inscripcióAO,
+      - id: 0c4864
+        content: Per a nens i nenes de Ays amants de cantar i ballarAòricsA,
+      - id: 6a4082
+        content: No són necessaris coneixements de cant i ball per assistir al campus; sí, ganes de gaudir d’una experiència únicaAO 
+
+
+  - id: mainSection4
+    title: Fonaments del CAMPUS
+    content: 
+    list: 
+      - id: 6be61f
+        content: Aprendran coneixements tècnics i pràctics de cantA ball i interpretacióAO,
+      - id: 7b46b8
+        content: Coneixeran noves amistats i treballaran l’autoconﬁançaAO,
+      - id: 4ad97a
+        content: Gaudiran d’activitats lúdiques enfocades a refrescarAar les nitsAemàtica d’EUFÒRIA CAMPUSA DANCEAONCERTAcAO
+
+
+images:
+  - id: 270f29
+    src: elcollell.webp
+    alt: El Collel
+
+  - id: d1fd61
+    src: euforia.webp
+    alt: Euforia
+
+  - id: ef2e03
+    src: euforia-mic.webp
+    alt: Micrófono Euforia
