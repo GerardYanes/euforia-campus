@@ -8,7 +8,7 @@
 		<div class="container max-w-4xl mx-auto">
 			<section id="header">
 				<div class="brand">
-					<h1>Euforia Campus</h1>
+					<h1>Eufòria Campus</h1>
 					<h2>Aquest estiu, viu la teva passió</h2>
 				</div>
 			</section>
