@@ -15,10 +15,10 @@ await useAsyncData('', () => queryContent('/global').find())
 
 <template>
 <section id="mainFooter">
-	<div class="border-t border-white container max-w-4xl pt-5 pb-8 mx-auto">
+	<div class="border-t border-white container max-w-4xl px-10 pt-5 pb-8 mx-auto lg:px-0">
 		<h3>{{ data.title }}</h3>
 
-		<div class="flex justify-center	gap-x-6 mt-7">
+		<div class="grid justify-center	gap-x-6 gap-y-4 mt-7 sm:flex">
 			<div>
 				<Button :text="btn_pdf.content" type="link"/>
 			</div>
@@ -30,13 +30,14 @@ await useAsyncData('', () => queryContent('/global').find())
 	</div>
 
 
-	<section class="bg-opacity-20 py-4 relative">
+	<section class="bg-opacity-20 px-10 py-5 relative lg:px-0">
 		<div class="container max-w-4xl mx-auto relative z-10">
 			<div class="grid gap-y-2 justify-center">
 				<div class="flex justify-center">
 					<img :src="brand" alt="Eufòria campus" class="w-32" />
 				</div>
-				<h4 class="uppercase">{{ data.slogan }}</h4>
+
+				<h4 class="text-center uppercase leading-tight mt-4">{{ data.slogan }}</h4>
 			</div>
 		</div>
 
@@ -45,10 +46,18 @@ await useAsyncData('', () => queryContent('/global').find())
 	
 
 
-	<section class="bg-[#D41366] py-4">
+	<section class="copy">
 		<div class="container max-w-4xl mx-auto">
-			<div class="text-sm text-center">
-				&copy; El Collell &middot; T. 972 57 40 60 &middot; info@euforiacampus.cat
+			<div class="grid gap-y-1.5 text-sm text-center sm:flex sm:justify-center">
+				<span class="">&copy; El Collell</span> 
+				<span class="">
+					<span class="hidden px-2 sm:inline-block">&middot;</span> 
+					<span>T. 972 57 40 60</span>
+				</span> 
+				<span class="">
+					<span class="hidden px-2 sm:inline-block">&middot;</span> 
+					<span class="">info@euforiacampus.cat</span>
+				</span>
 			</div>
 		</div>
 	</section>
@@ -63,6 +72,16 @@ await useAsyncData('', () => queryContent('/global').find())
 }
 
 h3{
-	@apply text-3xl leading-none font-bold text-center;
+	@apply text-xl leading-none font-bold text-center sm:text-2xl md:text-3xl;
+}
+
+.copy{
+	@apply bg-[#D41366] px-10 py-4 lg:px-0;
+}
+</style>
+
+<style>
+#mainFooter .btn{
+	@apply w-full;
 }
 </style>

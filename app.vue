@@ -24,19 +24,15 @@
 
 
 <style>
-html{
-	
-}
-
 body{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
+	font-size: 17px;
 	@apply bg-indigo-900 text-white font-medium;
 }
 
 #mainWrapper{
 	background-image: url('assets/img/background.webp');
-	background-size: 1100px auto;
+	background-size: auto 100%;
 	background-position: center top;
 	background-repeat: repeat-x;
 }
@@ -49,9 +45,25 @@ body{
 	background-position: center;
 	background-size: auto 100%;
 	font-size: 0;
-	width: 600px;
-	height: 380px;
+	width: 350px;
+	height: 220px;
 
 	@apply text-transparent mx-auto;
+}
+
+
+@media (min-width: 768px) {
+	body{
+		font-size: 20px;
+	}
+
+	#mainWrapper{
+		background-size: 1100px auto;
+	}
+
+	.brand{
+		width: 600px;
+		height: 380px;
+	}
 }
 </style>

@@ -18,7 +18,7 @@ const { data } = await useAsyncData('intro', () => queryContent('/intro').findOn
 
 <style scoped>
 #intro{
-	@apply font-medium leading-tight py-8 lg:px-20;
+	@apply font-medium leading-tight px-10 pt-6 pb-10 lg:px-20;
 }
 
 ul{

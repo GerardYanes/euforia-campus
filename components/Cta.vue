@@ -17,13 +17,13 @@ await useAsyncData('', () => queryContent('/global').find())
 	<h3>{{ data.title }}</h3>
 	<p>{{ data.p1 }}</p>
 
-	<div class="flex justify-center	gap-x-6 mt-8">
+	<div class="grid justify-center	gap-x-6 gap-y-4 mt-8 sm:flex">
 		<div>
-			<Button :text="btn_pdf.content" el="link" :href="btn_pdf.href"/>
+			<Button :text="btn_pdf.content" el="link" :href="btn_pdf.link" />
 		</div>
 
 		<div>
-			<Button :text="btn_subscribe.content" el="link"/>
+			<Button :text="btn_subscribe.content" el="link" />
 		</div>
 	</div>
 </section>
@@ -32,14 +32,21 @@ await useAsyncData('', () => queryContent('/global').find())
 
 <style scoped>
 #cta{
-	@apply border-y border-white px-40 pt-6 pb-8;
+	@apply border-y border-white px-10 pt-6 pb-8 lg:px-40;
 }
 
 h3{
-	@apply text-4xl leading-none font-bold text-center;
+	@apply text-3xl leading-none font-bold text-center md:text-4xl;
 }
 
 p{
 	@apply text-base text-center leading-tight mt-4;
+}
+
+</style>
+
+<style>
+#cta .btn{
+	@apply w-full;
 }
 </style>
