@@ -2,10 +2,10 @@ sections:
 
   - id: mainSection1
     title: Organitzadors del CAMPUS
-    content: El complex ludicoesportiu EL COLLELL, amb més de 20 \n
+    content: "El complex ludicoesportiu EL COLLELL, amb més de 20 \n
               anys d’experiència al sector del lleure, i amb unes \n
               instalAorces amb L’EQUIP \n
-              D’EUFÒRIA per realitzar aquest campus apassionantAO
+              D’EUFÒRIA per realitzar aquest campus apassionantAO"
     list: 
 
     img:
@@ -15,10 +15,10 @@ sections:
 
   - id: mainSection2
     title: Qui atendrà els participants?
-    content: Un equip de professionals del món del cantAoreograﬁa \n
+    content: "Un equip de professionals del món del cantAoreograﬁa \n
               i la interpretació dirigiran les classes i tallers juntament \n
               amb el nostre equip de monitoratgeAà \n
-              acompanyarà i tutelarà els participants les A
+              acompanyarà i tutelarà els participants les A"
     list: 
 
 

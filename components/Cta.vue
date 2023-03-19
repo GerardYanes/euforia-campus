@@ -19,7 +19,7 @@ await useAsyncData('', () => queryContent('/global').find())
 
 	<div class="grid justify-center	gap-x-6 gap-y-4 mt-8 sm:flex">
 		<div>
-			<Button :text="btn_pdf.content" el="link" :href="btn_pdf.link" />
+			<Button :text="btn_pdf.content" el="link" :href="btn_pdf.link" target="_blank" />
 		</div>
 
 		<div>
