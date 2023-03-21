@@ -7,7 +7,7 @@ defineProps({
 		default: 'button'
 	},
 	href: String,
-	target: Boolean
+	target_blank: Boolean
 })
 </script>
 
@@ -23,7 +23,7 @@ defineProps({
 	v-if="el === 'link'" 
 	:href="href"
 	class="btn"
-	:target="target ? '_blank' : '_self'">
+	:target="target_blank ? '_blank' : '_self'">
 	<span>{{ text }}</span>
 </a>
 </template>

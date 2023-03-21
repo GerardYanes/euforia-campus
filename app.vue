@@ -1,29 +1,42 @@
 <script setup>
+import consolaGlobalInstance from 'consola';
 
+const redirection = ref(false)
+const main_content = ref(null)
+
+const setRedirection = () => {
+	redirection.value = true
+	setTimeout(() => main_content.value.remove(), 600)
+}
 </script>
 
 
 <template>
   <main id="mainWrapper">
-		<div class="container max-w-4xl mx-auto">
-			<section id="header">
-				<div class="brand">
-					<h1>Eufòria Campus</h1>
-					<h2>Aquest estiu, viu la teva passió</h2>
-				</div>
-			</section>
+		<div ref="main_content">
+			<div class="container max-w-4xl mx-auto">
+				<section id="header">
+					<div class="brand">
+						<h1>Eufòria Campus</h1>
+						<h2>Aquest estiu, viu la teva passió</h2>
+					</div>
+				</section>
 
-			<Intro/>
-			<Cta/>
-			<Main/>
+				<Intro/>
+				<Cta @redirect="setRedirection" />
+				<Main/>
+			</div>
+
+			<Footer @redirect="setRedirection" />
 		</div>
-
-		<Footer/>
+		<Transition>
+			<Redirection v-if="redirection"/>
+		</Transition>
   </main>
 </template>
 
 
-<style>
+<style lang="scss">
 body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
@@ -31,16 +44,16 @@ body{
 }
 
 #mainWrapper{
-	background-image: url('assets/img/background.webp');
-	background-size: auto 100%;
-	background-position: center top;
-	background-repeat: repeat-x;
+	background: 
+		url('assets/img/background.webp') no-repeat center top / auto 100%, 
+		linear-gradient(50deg, rgba(219,6,134,1) 15%, rgba(0,19,61,1) 84%) no-repeat;
+	background-color: rgb(219,6,134);
 }
 
 #header{ @apply py-8; }
 
 .brand{
-	background-image: url('assets/img/brand.webp');
+	background-image: url('assets/img/brand.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: auto 100%;
@@ -58,12 +71,23 @@ body{
 	}
 
 	#mainWrapper{
-		background-size: 1100px auto;
+		background-size: 1100px auto, cover;
 	}
 
 	.brand{
 		width: 600px;
-		height: 380px;
+		height: 360px;
 	}
+}
+
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>

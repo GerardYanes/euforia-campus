@@ -9,6 +9,9 @@ await useAsyncData('', () => queryContent('/global').find())
 	btn_pdf.value = resp.data.value[0].btn_pdf
 	btn_subscribe = resp.data.value[0].btn_subscribe
 })
+
+const emit = defineEmits(['redirect'])
+const setRedirection = () => emit('redirect', true)
 </script>
 
 
@@ -19,11 +22,17 @@ await useAsyncData('', () => queryContent('/global').find())
 
 	<div class="grid justify-center	gap-x-6 gap-y-4 mt-8 sm:flex">
 		<div>
-			<Button :text="btn_pdf.content" el="link" :href="btn_pdf.link" target="_blank" />
+			<Button 
+				:text="btn_pdf.content" 
+				el="link" 
+				:href="btn_pdf.link" 
+				:target_blank="true" />
 		</div>
 
 		<div>
-			<Button :text="btn_subscribe.content" el="link" />
+			<span @click="setRedirection">
+				<Button :text="btn_subscribe.content" />
+			</span>
 		</div>
 	</div>
 </section>
@@ -42,8 +51,9 @@ h3{
 p{
 	@apply text-base text-center leading-tight mt-4;
 }
-
 </style>
+
+
 
 <style>
 #cta .btn{

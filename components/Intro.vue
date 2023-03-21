@@ -1,4 +1,5 @@
 <script setup>
+import bullet from '~/assets/img/bullet.svg'
 const { data } = await useAsyncData('intro', () => queryContent('/intro').findOne())
 </script>
 
@@ -9,7 +10,8 @@ const { data } = await useAsyncData('intro', () => queryContent('/intro').findOn
 
 	<ul>
 		<li v-for="li in data.list" :key="li.id">
-			{{ li.content }}
+			<img :src="bullet" class="bullet" />
+			<span>{{ li.content }}</span>
 		</li>
 	</ul>
 </section>
@@ -23,6 +25,14 @@ const { data } = await useAsyncData('intro', () => queryContent('/intro').findOn
 
 ul{
 	@apply mt-6;
+}
+
+li{
+	@apply flex items-start gap-x-3;
+}
+
+.bullet{
+	@apply w-4 top-1.5 relative select-none pointer-events-none;
 }
 
 li + li{

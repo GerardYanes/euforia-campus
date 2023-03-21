@@ -10,6 +10,9 @@ await useAsyncData('', () => queryContent('/global').find())
 	btn_pdf.value = resp.data.value[0].btn_pdf
 	btn_subscribe = resp.data.value[0].btn_subscribe
 })
+
+const emit = defineEmits(['redirect'])
+const setRedirection = () => emit('redirect', true)
 </script>
 
 
@@ -20,11 +23,17 @@ await useAsyncData('', () => queryContent('/global').find())
 
 		<div class="grid justify-center	gap-x-6 gap-y-4 mt-7 sm:flex">
 			<div>
-				<Button :text="btn_pdf.content" el="link" :href="btn_pdf.link" target="_blank" />
+				<Button 
+					:text="btn_pdf.content" 
+					el="link" 
+					:href="btn_pdf.link" 
+					:target_blank="true" />
 			</div>
 
 			<div>
-				<Button :text="btn_subscribe.content" type="link"/>
+				<span @click="setRedirection">
+					<Button :text="btn_subscribe.content" />
+				</span>
 			</div>
 		</div>
 	</div>
@@ -34,7 +43,10 @@ await useAsyncData('', () => queryContent('/global').find())
 		<div class="container max-w-4xl mx-auto relative z-10">
 			<div class="grid gap-y-2 justify-center">
 				<div class="flex justify-center">
-					<img :src="brand" alt="Eufòria campus" class="w-32" />
+					<img 
+						:src="brand" 
+						alt="Eufòria campus" 
+						class="w-32 select-none pointer-events-none" />
 				</div>
 
 				<h4 class="text-center uppercase leading-tight mt-4">{{ data.slogan }}</h4>

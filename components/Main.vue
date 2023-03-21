@@ -1,5 +1,10 @@
 <script setup>
+import img1 from '../assets/img/elcollell.webp'
+import img2 from '../assets/img/euforia.webp'
+import img3 from '../assets/img/euforia-mic.webp'
+
 import bullet from '~/assets/img/bullet.svg'
+
 const { data } = await useAsyncData('main', () => queryContent('/main').findOne())
 </script>
 
@@ -35,16 +40,17 @@ const { data } = await useAsyncData('main', () => queryContent('/main').findOne(
 
 
 		<div class="hidden gap-x-3 gap-y-12 sm:flex md:order-2 md:grid md:col-span-6">
-			<div 
-				v-for="img in data.images" 
-				:key="img.id">
-
-				<img 
-					:src="`/_nuxt/assets/img/${img.src}`" 
-					:alt="img.alt">
-
+			<div>
+				<img :src="img1" alt="El Collell">
 			</div>
 
+			<div>
+				<img :src="img2" alt="Eufòria">
+			</div>
+
+			<div>
+				<img :src="img3" alt="Micrófono Euforia">
+			</div>
 		</div>
 	</div>
 
@@ -78,6 +84,6 @@ li + li{
 }
 
 .bullet{
-	@apply w-3;
+	@apply w-3 select-none pointer-events-none;
 }
 </style>

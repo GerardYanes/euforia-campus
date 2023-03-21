@@ -46,17 +46,3 @@ sections:
         content: Coneixeran noves amistats i treballaran l’autoconﬁançaAO,
       - id: 4ad97a
         content: Gaudiran d’activitats lúdiques enfocades a refrescarAar les nitsAemàtica d’EUFÒRIA CAMPUSA DANCEAONCERTAcAO
-
-
-images:
-  - id: 270f29
-    src: elcollell.webp
-    alt: El Collel
-
-  - id: d1fd61
-    src: euforia.webp
-    alt: Eufòria
-
-  - id: ef2e03
-    src: euforia-mic.webp
-    alt: Micrófono Eufoeria
