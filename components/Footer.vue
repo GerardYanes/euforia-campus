@@ -49,7 +49,11 @@ const setRedirection = () => emit('redirect', true)
 						class="w-32 select-none pointer-events-none" />
 				</div>
 
-				<h4 class="text-center uppercase leading-tight mt-4">{{ data.slogan }}</h4>
+				<div 
+					class="mt-3 grid gap-y-1 
+									sm:flex sm:items-end sm:gap-x-3 sm:mt-2">
+					<FooterCopy />
+				</div>
 			</div>
 		</div>
 
@@ -68,8 +72,18 @@ const setRedirection = () => emit('redirect', true)
 				</span> 
 				<span class="">
 					<span class="hidden px-2 sm:inline-block">&middot;</span> 
-					<span class="">info@euforiacampus.cat</span>
+					<span class="">
+						<a href="mailto:info@euforiacampus.cat">info@euforiacampus.cat</a>
+					</span>
 				</span>
+			</div>
+
+			<div class="text-xs text-center mt-2">
+				L’empresa responsable i organitzadora 
+				d’Eufòria Campus és RESANGI, S.L. amb 
+				domicili social a Sant Ferriol, Ctra. 
+				de St. Miquel de Campmajor al Torn, s/n, 
+				amb NIF B17756347
 			</div>
 		</div>
 	</section>

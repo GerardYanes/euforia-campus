@@ -14,7 +14,7 @@ const { data } = await useAsyncData('main', () => queryContent('/main').findOne(
 	
 	<div class="grid gap-10 md:grid-cols-12 lg:gap-20">
 		
-		<div class="grid gap-y-10 sm:order-2 md:col-span-6">
+		<div class="order-2 grid gap-y-10 sm:order-2 md:col-span-6">
 			<div 
 				v-for="section in data.sections"
 				:key="section.id"
@@ -39,7 +39,7 @@ const { data } = await useAsyncData('main', () => queryContent('/main').findOne(
 
 
 
-		<div class="hidden gap-x-3 gap-y-12 sm:flex md:order-2 md:grid md:col-span-6">
+		<div class="grid gap-x-3 gap-y-3 sm:flex md:order-2 md:grid md:col-span-6 md:gap-y-12">
 			<div>
 				<img :src="img1" alt="El Collell">
 			</div>

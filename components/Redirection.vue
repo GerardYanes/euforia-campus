@@ -6,13 +6,13 @@ import brand from '~/assets/img/footer-brand.svg'
 <template>
 <div class="bg-[#011336] grid place-content-center inset-0 fixed z-50">
 	<div class="select-none">
-		<img 
-			:src="brand" 
+		<img
+			:src="brand"
 			alt="Eufòria campus"
 			class="w-40 mx-auto pointer-events-none md:w-60">
-		
+
 		<div class="text-center mt-8">
-			T'estem redirigint ak procés d'onscripció.
+			T'estem redirigint al procés d'inscripció.
 		</div>
 
 		<div class="flex justify-center mt-10" role="status">
