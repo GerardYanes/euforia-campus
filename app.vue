@@ -71,7 +71,7 @@ body{
 	}
 
 	#mainWrapper{
-		background-size: 1100px auto, cover;
+		background-size: auto 100%, cover;
 	}
 
 	.brand{
