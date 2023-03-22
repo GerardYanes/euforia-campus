@@ -58,12 +58,18 @@ body{
 	background-position: center;
 	background-size: auto 100%;
 	font-size: 0;
-	width: 350px;
-	height: 220px;
+	width: 100%;
+	height: 150px;
 
 	@apply text-transparent mx-auto;
 }
 
+
+@media (min-width: 400px) {
+	.brand{
+		height: 37vw;
+	}
+}
 
 @media (min-width: 768px) {
 	body{
@@ -75,8 +81,7 @@ body{
 	}
 
 	.brand{
-		width: 600px;
-		height: 360px;
+		height: 260px;
 	}
 }
 
