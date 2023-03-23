@@ -11,9 +11,9 @@ await useAsyncData('', () => queryContent('/global').find())
 })
 
 const emit = defineEmits(['redirect'])
+
 const setRedirection = () => {
 	emit('redirect', true)
-	
 	setTimeout(() => window.location.href = btn_subscribe.value.link, 2000)
 }
 </script>

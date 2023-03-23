@@ -8,11 +8,15 @@ const { data } = await useAsyncData('footer', () => queryContent('/footer').find
 await useAsyncData('', () => queryContent('/global').find())
 .then(resp => {
 	btn_pdf.value = resp.data.value[0].btn_pdf
-	btn_subscribe = resp.data.value[0].btn_subscribe
+	btn_subscribe.value = resp.data.value[0].btn_subscribe
 })
 
 const emit = defineEmits(['redirect'])
-const setRedirection = () => emit('redirect', true)
+
+const setRedirection = () => {
+	emit('redirect', true)
+	setTimeout(() => window.location.href = btn_subscribe.value.link, 2000)
+}
 </script>
 
 
