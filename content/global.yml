@@ -1,9 +1,7 @@
 btn_pdf:
   content: PDF INFORMATIU
-  class:
   link: 'downloads/euforia.pdf'
 
 btn_subscribe:
   content: INSCRIU-T’HI
-  class:
-  link: '#'
+  link: 'https://intranet.elcollell.cat/#!/l/el-collell/b/i/3000'

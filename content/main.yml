@@ -1,7 +1,7 @@
 sections:
 
   - id: mainSection1
-    title: Organitzadors del CAMPUS
+    title: "Organitzadors del CAMPUS"
     content: "El complex ludicoesportiu EL COLLELL, amb més de 20 \n
               anys d’experiència al sector del lleure, i amb unes \n
               instal·lacions magnífiques suma forces amb L’EQUIP \n
@@ -14,11 +14,11 @@ sections:
 
 
   - id: mainSection2
-    title: Qui atendrà els participants?
+    title: "Qui atendrà els participants?"
     content: "Un equip de professionals del món del cant, la coreografia  \n
               i la interpretació dirigiran les classes i tallers juntament \n
               amb el nostre equip de monitoratge, que estarà \n
-              acompanyarà i tutelarà els participants les 24 h."
+              acompanyant i tutelant els participants les 24 h."
     list:
 
 
@@ -29,20 +29,20 @@ sections:
       - id: 3ee610
         content: "Consta de 2 torns: descarregar pdf informatiu."
       - id: 7db4df
-        content: Places limitades i reserva estrictament per ordre d’inscripció.
+        content: "Places limitades i reserva estrictament per ordre d’inscripció."
       - id: 0c4864
-        content: Per a nens i nenes de 8 a 14 anys amants de cantar i ballar, que tinguin ganes de passar uns dies eufòrics!
+        content: "Per a nens i nenes de 8 a 14 anys amants de cantar i ballar, que tinguin ganes de passar uns dies eufòrics!"
       - id: 6a4082
-        content: No són necessaris coneixements de cant i ball per assistir al campus; sí, ganes de gaudir d’una experiència única.
+        content: "No són necessaris coneixements de cant i ball per assistir al campus; sí ganes de gaudir d’una experiència única."
 
 
   - id: mainSection4
     title: "Fonaments del CAMPUS:"
-    content: 
+    content:
     list:
       - id: 6be61f
-        content: Aprendran coneixements tècnics i pràctics de cant, ball i interpretació.
+        content: "Aprendran coneixements tècnics i pràctics de cant, ball i interpretació."
       - id: 7b46b8
-        content: Coneixeran noves amistats i treballaran l’autoconfiança.
+        content: "Coneixeran noves amistats i treballaran l’autoconfiança."
       - id: 4ad97a
         content: "Gaudiran d’activitats lúdiques enfocades a refrescar-se i dinamitzar les nits, seguint la temàtica d’EUFÒRIA CAMPUS: EUFÒRIA pool party, EUFÒRIA DANCE, EUFÒRIA CONCERT, etc."
